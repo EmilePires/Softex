@@ -1,0 +1,30 @@
+*{box-sizing: border-box;}
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    background: radial-gradient( circle, #f8c7c7, #cacaf1);
+    display: flex;
+    margin: 0;
+    min-height: 100vh;
+    align-items: center;
+}
+.card{
+    background: linear-gradient( to right, #f8eeee, #f3cdcb);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.08);
+    width: 320px;
+
+}
+
+button{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+input{
+    padding: 8x;
+    margin: 10px 0;
+    width: 100%;
+}
+
+
