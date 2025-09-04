@@ -1,35 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8" />
-<title> Calculadora</title>
-<link rel="stylesheet" href="style.css" />
-<script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <title>Ex 8 - Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <div class="card">
+    <h1>Mini Calculadora</h1>
+    <div class="grid">
+      <div>
+        <label for="a">Número A</label>
+        <input id="a" type="number" placeholder="Ex.: 10">
+      </div>
+      <div>
+        <label for="b">Número B</label>
+        <input id="b" type="number" placeholder="Ex.: 3">
+      </div>
+    </div>
+    <button id="btnCalc" type="button">Calcular</button>
 
-<div class="card">
-<h1>Calculadora</h1>
-<div class="grid">
-<div>
-<label for="a">Número A</label>
-<input id="a" type="number" placeholder="Ex.: 10" />
-</div>
-
-<div>
-<label for="b">Número B</label>
-<input id="b" type="number" placeholder="Ex.: 3" />
-</div>
-</div>
-
-<button id="btnCalc" type="button">Calcular</button>
-<ul id="out">
-<li><strong>Soma:</strong> <span id="soma"></span></li>
-<li><strong>Subtração:</strong> <span id="sub"></span></li>
-<li><strong>Multiplicação:</strong> <span id="mul"></span></li>
-<li><strong>Divisão:</strong> <span id="div"></span></li>
-
-</ul>
-</div>
+    <ul id="out">
+      <li><strong>Soma:</strong> <span id="soma"></span></li>
+      <li><strong>Subtração:</strong> <span id="sub"></span></li>
+      <li><strong>Multiplicação:</strong> <span id="mul"></span></li>
+      <li><strong>Divisão:</strong> <span id="div"></span></li>
+    </ul>
+  </div>
 </body>
 </html>

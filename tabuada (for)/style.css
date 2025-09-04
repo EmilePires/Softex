@@ -98,16 +98,3 @@ li {
   font-weight: 700;
   margin-top: 8px;
 }
-
-/* Tabela usada na transposta */
-#outTransposta table {
-  border-collapse: collapse;
-  margin-top: 10px;
-  width: 100%;
-}
-
-#outTransposta td {
-  border: 1px solid #ddd;
-  padding: 8px 12px;
-  text-align: center;
-}
