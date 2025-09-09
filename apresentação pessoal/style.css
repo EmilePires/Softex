@@ -1,0 +1,77 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  background: #faefef;
+  color: #292828;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: rgb(255, 255, 255);
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.avatar{
+width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  
+
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  margin-bottom: 0.2rem;
+  color: #222;
+}
+
+h2 {
+  border-bottom: 2px solid #7a4caf;
+  padding-bottom: 0.3rem;
+  color: #9b4caf;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 1rem;
+}
+
+.skills {
+  display: flex;
+  gap: 10px;
+}
+
+.skill {
+  flex: 1;
+  background: #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  color: #222;
+  font-weight: bold;
+}
+
+.skill::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  background: #4CAF50;
+  width: 0%;
+  z-index: -1;
+  transition: width 1s ease;
+}
