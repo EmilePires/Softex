@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  background: radial-gradient( circle, #daeef3, #dde2f7);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 24px;
+  background-image: url('fundo.png');
+}
+
+
+.card {
+  background: #ffff;
+  padding: 50px;
+  border-radius: 30px;
+  border: 2px solid #333333;
+  width: 500px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  margin-bottom: 24px;
+  font-size: 3rem;
+  text-align: center;
+  color: #333;
+}
+
+
+label {
+display: block;
+font-weight: 600;
+margin-bottom: 6px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background: #F37721;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: filter 0.2s;
+}
+
+button:hover {
+filter: brightness(1.05);
+}
+
+table {
+    margin-top: 22px;
+    border-collapse: inherit #3333;
+    width: 70%;
+    border: 2px solid #333333;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+th{
+    background-color: rgb(243, 208, 155);
+}
+tr{
+
+    background-color:rgb(246, 241, 241);
+}
+
+#resultado {
+    margin-top: 25px;
+    font-weight: bold;
+    background: rgb(241, 240, 240);
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 4px 8px rgba(245, 239, 239, 0.1);
+    line-height: 1.5em;
+}

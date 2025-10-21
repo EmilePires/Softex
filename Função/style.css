@@ -1,0 +1,20 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding:100px;
+    background-color: rgb(244, 245, 244);
+}
+h1{
+    color: rgb(0, 0, 0);
+}
+
+label{
+    color: rgb(0, 0, 0);
+
+}
+button{
+    color: rgb(0, 0, 0);
+    background-color: rgb(245, 239, 203);
+}
+
+

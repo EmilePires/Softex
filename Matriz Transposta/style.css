@@ -1,0 +1,113 @@
+/* Aplica para todos os elementos */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fundo e fonte */
+body {
+  font-family: Arial, sans-serif;
+  background: #f6f7fb;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+/* Caixa principal (card) */
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 360px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Títulos */
+h1 {
+  margin-bottom: 12px;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #333;
+}
+
+h3 {
+  margin-top: 12px;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Labels e inputs */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+/* Grid (usado em matrizes, etc) */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+/* Botões */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background: #10b981;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: filter 0.2s;
+}
+
+button:hover {
+  filter: brightness(1.05);
+}
+
+/* Lista de resultados */
+ul {
+  margin-top: 12px;
+  padding-left: 18px;
+}
+
+li {
+  margin: 6px 0;
+  font-size: 1rem;
+}
+
+/* Erros */
+.error {
+  color: #b91c1c;
+  font-weight: 700;
+  margin-top: 8px;
+}
+
+/* Tabela usada na transposta */
+#outTransposta table {
+  border-collapse: collapse;
+  margin-top: 10px;
+  width: 100%;
+}
+
+#outTransposta td {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  text-align: center;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Tabuada 1 a 10</title>
+</head>
+<body>
+    <h1>Tabuada</h1>
+    <label for="numero">Escreva um número aleatório:</label>
+     <input id="numero" type="number" step="any" placeholder="Ex: 8" />
+
+   <button id="btnGerar" type="button" onclick="gerarTabuada()">Gerar</button>
+   <button id="btnLimpar" type="button" onclick="limpar()">Limpar</button>
+
+   <ul id="resultado"></ul>
+    
+</body>
+<script src="script.js" defer></script>
+    
+</html>
+document.addEventListener("DOMContentLoaded", () =>{
+    const input = document.getElementById('numero');
+    const btnGerar = document.getElementById('btnGerar');
+    const btnLimpar = document.getElementById('btnLimpar');
+    const lista = document.getElementById('resultado');
+
+    function gerarTabuada() {
+        const valor = Number(input.value);
+        lista.innerHTML = '';
+
+        if (Number.isNaN(valor)) {
+            const li = Document.createElement('li');
+            li.textCONTENT = 'Digite um numero valido.';
+            lista.appendChild(li);
+            return;
+
+        }
+
+        for (let i = 1; i<=10; i++){
+            const li = document.createElement('li');
+            li.textContent = `${valor} x ${i} = ${valor * i}`
+            lista.appemdChild(li);
+        }
+        }
+    
+
+    function limpar() {
+        input.value = '';
+        lista.innerHTML = '';
+        input.focus();
+    }
+
+    btnGerar.addEventListener('click', gerarTabuada);
+    btnLimpar.addEventListener('click',limpar);
+    input.addEventListener('keydown', (e) =>{
+        if (e.key === 'Enter') gerarTabuada();
+    });
+});
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ecdbee;
+    color: #000000;
+    text-align: center;
+    padding: 60px;
+}
+h1 {
+    color: #192129;
+}
+button {
+    background-color: #57e692;
+    color: rgb(0, 0, 0);
+    border:groove 2px #124d2a;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+button:hover {
+    background-color: #11743a;
+    color: rgb(207, 243, 0);
+}
+#mensagem {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #bd0202;
+}
