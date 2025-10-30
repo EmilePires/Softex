@@ -1,0 +1,79 @@
+body {
+  display: flex;             
+  justify-content: center;   
+  align-items: center;       
+  height: 50vh;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  background: linear-gradient(#10b981, #222, #2c3e50);
+  background-size: 800% 800%;
+  color: #292828;
+}
+
+.card {
+  max-width: 500px;
+  margin: 0 auto;
+  background: rgb(250, 250, 236);
+  padding: 3rem;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+p{
+    color: #292828;
+}
+
+h1 {
+  margin-bottom: 0.2rem;
+  color: #222;
+  margin-top: auto;
+  text-align: center;
+  font-size: 3rem;
+}
+
+button {
+  width: 60%;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  background: #5910b9;
+  color: #c7bebe;
+  cursor: pointer;
+  margin-top: 37px;
+  transition: filter 0.2s;
+  text-align: center;
+}
+
+button:hover {
+  filter: brightness(1.05);
+}
+
+input{
+    padding: 8x;
+    margin: 10px 0;
+    width: 100%;
+}
+#mensagem {
+  font-size: 18px;         
+  color: #2c3e50;          
+  padding: 10px 15px;      
+  border-radius: 8px;      
+  margin-top: 15px;        
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+  transition: all 0.3s ease; 
+  max-width: 300px;        
+  text-align: center;      
+}
+#mensagem.mostrar-mensagem {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
